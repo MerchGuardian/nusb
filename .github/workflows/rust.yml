@@ -45,5 +45,6 @@ jobs:
       with:
         targets: 'aarch64-linux-android, armv7-linux-androideabi'
     - name: build
-      run: cargo build --target aarch64-linux-android --all-features
-      run: cargo build --target armv7-linux-androideabi --all-features
+      run: |
+        cargo build --target aarch64-linux-android --all-features
+        cargo build --target armv7-linux-androideabi --all-features
